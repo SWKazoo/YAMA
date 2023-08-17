@@ -196,5 +196,5 @@ rule test {
     	strings:
     		$v1a = "notepad"
     	condition:
-    		$v1c
+    		$v1a
 }
