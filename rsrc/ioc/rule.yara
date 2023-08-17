@@ -188,13 +188,16 @@ rule APT10_ChChes_powershell {
     		$v1c and ($v1a or $v1b)
 }
 
-rule ExampleTestfileRule {
-    meta:                                                             
-        description = "This is example file"                            
+rule TROJAN_Notepad {
+    meta:
+        Author = "RSA_IR"
+        Date     = "4Jun13"
+        File     = "notepad.exe v 1.1"
+        MD5      = "106E63DBDA3A76BEEB53A8BBD8F98927"
 
     strings:
-        $text_string = "This is a test"
-        $text_binary = {54 68 69 73 20 69 73 20 61 20 74 65 73 74}
+        $s1 = "75BAA77C842BE168B0F66C42C7885997"
+        $s2 = "B523F63566F407F3834BCC54AAA32524"
     condition:
-        $text_string or $text_binary
+        $s1 or $s2
 }
