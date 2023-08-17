@@ -187,3 +187,14 @@ rule APT10_ChChes_powershell {
     	condition:
     		$v1c and ($v1a or $v1b)
 }
+
+rule test {
+      meta:
+        description = "test"
+        author = "test"
+
+    	strings:
+    		$v1a = "test"
+    	condition:
+    		$v1c
+}
