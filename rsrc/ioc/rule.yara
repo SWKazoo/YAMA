@@ -188,7 +188,7 @@ rule APT10_ChChes_powershell {
     		$v1c and ($v1a or $v1b)
 }
 
-rule ExampleTestfileRule　{
+rule ExampleTestfileRule {
     meta:                                                             
         description = "This is example file"                            
 
