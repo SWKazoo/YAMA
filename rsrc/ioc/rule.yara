@@ -194,7 +194,7 @@ rule test {
         author = "test"
 
     	strings:
-    		$v1a = "test"
+    		$v1a = "notepad"
     	condition:
     		$v1c
 }
